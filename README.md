@@ -7,7 +7,7 @@ Under the hood, this demo uses:
 - RESTEasy to expose the REST endpoints
 - REST-assured and JUnit 5 for endpoint testing
 
-## Requirements
+### Requirements
 
 To compile and run this demo you will need:
 
