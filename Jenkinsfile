@@ -15,7 +15,7 @@ pipeline {
         stage("Package"){
             steps{
             sh "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn -f /var/jenkins_home/workspace/PipelineScriptSCM/pom.xml package"
-            }
+            }}
         }
         }
     
