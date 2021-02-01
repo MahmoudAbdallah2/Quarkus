@@ -4,17 +4,17 @@ pipeline {
     stages{
         stage("Build"){
             steps{
-            sh "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn -f /var/jenkins_home/workspace/PipelineScriptSCM/pom.xml compile"
+            sh "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn -f /var/jenkins_home/workspace/Pipelinejob/pom.xml compile"
             }
         }
         stage("Test"){
             steps{
-            sh "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn -f /var/jenkins_home/workspace/PipelineScriptSCM/pom.xml test"
+            sh "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn -f /var/jenkins_home/workspace/PipelineJob/pom.xml test"
             }
         }
         stage("Package"){
             steps{
-            sh "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn -f /var/jenkins_home/workspace/PipelineScriptSCM/pom.xml package"
+            sh "/var/jenkins_home/tools/hudson.tasks.Maven_MavenInstallation/Maven/bin/mvn -f /var/jenkins_home/workspace/Pipelinejob/pom.xml package"
             }
         }
         }
